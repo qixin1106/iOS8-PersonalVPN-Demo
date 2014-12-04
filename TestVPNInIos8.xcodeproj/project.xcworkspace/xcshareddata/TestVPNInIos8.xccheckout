@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4931A47F-03CB-455D-A6F8-84F204BDAA92</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TestVPNInIos8</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3E9178E3678485411E6EAAC79C859C478F07D3C5</key>
+		<string>https://github.com/qixin1106/iOS8-PersonalVPN-Demo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TestVPNInIos8.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3E9178E3678485411E6EAAC79C859C478F07D3C5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/qixin1106/iOS8-PersonalVPN-Demo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3E9178E3678485411E6EAAC79C859C478F07D3C5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3E9178E3678485411E6EAAC79C859C478F07D3C5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS8-PersonalVPN-Demo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
