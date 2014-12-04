@@ -3,7 +3,7 @@ iOS8的Personal VPN 测试用例
 ===================================  
   
     
-使用方式 
+注意事项 
 -----------------------------------  
 1.工程配置中确认Capabilities中的Personal VPN开启
 
@@ -11,9 +11,39 @@ iOS8的Personal VPN 测试用例
 
 3.@import NetworkExtension;
 
-###	fuck
-	得得
-	的得到3
+
+
+
+
+### 创建VPN描述文件
+[[NEVPNManager sharedManager] loadFromPreferencesWithCompletionHandler:^(NSError *error){
+if(error)
+{
+NSLog(@"Load error: %@", error);
+}
+else
+{
+//配置IPSec
+[self setupIPSec];
+
+//保存VPN到系统->通用->VPN->个人VPN
+[[NEVPNManager sharedManager] saveToPreferencesWithCompletionHandler:^(NSError *error){
+if(error)
+{
+ALERT(@"saveToPreferences", error.description);
+NSLog(@"Save error: %@", error);
+}
+else
+{
+NSLog(@"Saved!");
+ALERT(@"Saved", @"Saved");
+}
+}];
+}
+}];
+
+
+
 	
 
 
