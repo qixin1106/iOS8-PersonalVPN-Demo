@@ -14,6 +14,8 @@
 		998F0D8D1A2574700076857C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 998F0D8C1A2574700076857C /* Images.xcassets */; };
 		998F0D901A2574700076857C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998F0D8E1A2574700076857C /* LaunchScreen.xib */; };
 		998F0DA61A25747D0076857C /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998F0DA51A25747D0076857C /* NetworkExtension.framework */; };
+		99B9D8151A30733900C66CBD /* 安装描述文件流程.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99B9D8131A30733900C66CBD /* 安装描述文件流程.jpg */; };
+		99B9D8161A30733900C66CBD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 99B9D8141A30733900C66CBD /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		998F0D8F1A2574700076857C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		998F0DA51A25747D0076857C /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		998F0DA71A25747D0076857C /* TestVPNInIos8.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TestVPNInIos8.entitlements; sourceTree = "<group>"; };
+		99B9D8131A30733900C66CBD /* 安装描述文件流程.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "安装描述文件流程.jpg"; sourceTree = "<group>"; };
+		99B9D8141A30733900C66CBD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 		998F0D731A2574700076857C = {
 			isa = PBXGroup;
 			children = (
+				99B9D8131A30733900C66CBD /* 安装描述文件流程.jpg */,
+				99B9D8141A30733900C66CBD /* README.md */,
 				998F0DA51A25747D0076857C /* NetworkExtension.framework */,
 				998F0D7E1A2574700076857C /* TestVPNInIos8 */,
 				998F0D7D1A2574700076857C /* Products */,
@@ -149,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				998F0D8B1A2574700076857C /* Main.storyboard in Resources */,
+				99B9D8151A30733900C66CBD /* 安装描述文件流程.jpg in Resources */,
 				998F0D901A2574700076857C /* LaunchScreen.xib in Resources */,
 				998F0D8D1A2574700076857C /* Images.xcassets in Resources */,
 			);
@@ -163,6 +170,7 @@
 			files = (
 				998F0D881A2574700076857C /* ViewController.m in Sources */,
 				998F0D851A2574700076857C /* AppDelegate.m in Sources */,
+				99B9D8161A30733900C66CBD /* README.md in Sources */,
 				998F0D821A2574700076857C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
