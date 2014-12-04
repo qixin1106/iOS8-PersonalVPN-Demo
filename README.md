@@ -93,9 +93,6 @@ iOS8的Personal VPN 测试用例
 配置IPSec
 ---------------------------------
 
-
-- (void)setupIPSec
-{
     NEVPNProtocolIPSec *p = [[NEVPNProtocolIPSec alloc] init];
     p.username = kVPNName;
     p.passwordReference = [self searchKeychainCopyMatching:kPasswordReference];
@@ -113,7 +110,4 @@ iOS8的Personal VPN 测试用例
     [[NEVPNManager sharedManager] setOnDemandEnabled:NO];
     [[NEVPNManager sharedManager] setLocalizedDescription:@"个人-VPN测试"];//VPN自定义名字
     [[NEVPNManager sharedManager] setEnabled:YES];
-}
-
-
 
