@@ -40,3 +40,53 @@ iOS8的Personal VPN 测试用例
                     }];
                 }
             }];
+
+
+
+删除VPN描述文件
+---------------------------------
+
+            [[NEVPNManager sharedManager] loadFromPreferencesWithCompletionHandler:^(NSError *error){
+                if (!error)
+                {
+                    [[NEVPNManager sharedManager] removeFromPreferencesWithCompletionHandler:^(NSError *error){
+                        if(error)
+                        {
+                            NSLog(@"Remove error: %@", error);
+                            ALERT(@"removeFromPreferences", error.description);
+                        }
+                        else
+                        {
+                            ALERT(@"removeFromPreferences", @"删除成功");
+                        }
+                    }];
+                }
+            }];
+
+
+
+连接VPN
+---------------------------------
+
+            [[NEVPNManager sharedManager] loadFromPreferencesWithCompletionHandler:^(NSError *error){
+                if (!error)
+                {
+                    //配置IPSec
+                    [self setupIPSec];
+                    [[NEVPNManager sharedManager].connection startVPNTunnelAndReturnError:nil];
+                }
+            }];
+
+
+
+断开VPN
+---------------------------------
+
+            [[NEVPNManager sharedManager] loadFromPreferencesWithCompletionHandler:^(NSError *error){
+                if (!error)
+                {
+                    [[NEVPNManager sharedManager].connection stopVPNTunnel];
+                }
+            }];
+
+
