@@ -90,3 +90,30 @@ iOS8的Personal VPN 测试用例
             }];
 
 
+配置IPSec
+---------------------------------
+
+
+- (void)setupIPSec
+{
+    NEVPNProtocolIPSec *p = [[NEVPNProtocolIPSec alloc] init];
+    p.username = kVPNName;
+    p.passwordReference = [self searchKeychainCopyMatching:kPasswordReference];
+    p.serverAddress = kServerAddress;
+    p.authenticationMethod = NEVPNIKEAuthenticationMethodSharedSecret;
+    p.sharedSecretReference = [self searchKeychainCopyMatching:kSharedSecretReference];
+    p.disconnectOnSleep = NO;
+    
+    //需要扩展鉴定(群组)
+    p.localIdentifier = kLocalIdentifier;
+    p.remoteIdentifier = kRemoteIdentifier;
+    p.useExtendedAuthentication = YES;
+    
+    [[NEVPNManager sharedManager] setProtocol:p];
+    [[NEVPNManager sharedManager] setOnDemandEnabled:NO];
+    [[NEVPNManager sharedManager] setLocalizedDescription:@"个人-VPN测试"];//VPN自定义名字
+    [[NEVPNManager sharedManager] setEnabled:YES];
+}
+
+
+
